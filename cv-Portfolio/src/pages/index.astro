@@ -4,10 +4,12 @@ import SocialPill from '../components/SocialPill.astro';
 import LinkedLnIcon from '../components/Icons/LinkedLnIcon.astro';
 import Layout from '../layouts/Layout.astro';
 import Github from '../components/Icons/Github.astro';
+import Mail from '../components/Icons/Mail.astro';
+import Experience from '../components/Experience.astro';
 
 ---
 
-<Layout title="Portfolio">
+<Layout title="Portfolio de Geronimo Kramar: Desarrollador y Programador Web">
 	<main>
 		<section class="w-full mx-auto py-44 lg:w-[740px]">
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">Hey, soy Geronimo 
@@ -23,14 +25,21 @@ import Github from '../components/Icons/Github.astro';
 				<span class=" text-yellow-200/90">Desarrollador web FullStack y Creador de Contenido web.</span> 
 				<span class=" text-red-200/90"> De Buenos	Aires Argentina</span>. <span class=" opacity-75">Especializado en crear aplicaciones únicas.</span>
 			</h2>
-			<nav class="flex gap-x-2">
+			<nav class="flex gap-x-4 mt-8">
 				<SocialPill href="https://www.linkedin.com/in/gerokramar/">
 					<LinkedLnIcon class="w-6 h-6"></LinkedLnIcon>LinkedLn
 				</SocialPill>
-				<SocialPill href="https://www.linkedin.com/in/gerokramar/">
+				<SocialPill href="https://github.com/GeroKramar">
 					<Github class="w-6 h-6"></Github>Github
-					</SocialPill>
+				</SocialPill>
+				<SocialPill>
+					<Mail class="w-6 h-6"></Mail>Gerokramar@gmail.com
+					
+				</SocialPill>
 			</nav>
+		</section>
+		<section>
+			<Experience/>
 		</section>
 		</main>
 	</Layout>
