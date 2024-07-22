@@ -1,16 +1,38 @@
 ---
 import Badge from '../components/Badge.astro';
+import SocialPill from '../components/SocialPill.astro';
+import LinkedLnIcon from '../components/Icons/LinkedLnIcon.astro';
 import Layout from '../layouts/Layout.astro';
+import Github from '../components/Icons/Github.astro';
 
 ---
 
 <Layout title="Portfolio">
 	<main>
-		<h1 class="text-white">Hey, soy Geronimo <Badge>Disponible para trabajar</Badge></h1>
-		<h2>Desarrollador web FullStack y Creador de Contenido web. Buenos
-			Aires Argentina. Especializado en crear aplicaciones unicas.
-		</h2>
-	</main>
-</Layout>
+		<section class="w-full mx-auto py-44 lg:w-[740px]">
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">Hey, soy Geronimo 
+				<a href="https://www.linkedin.com/in/gerokramar/"
+				target="_blank"
+				rel="noopener"
+				class="flex items-center justify-center">
+				<Badge>Disponible para trabajar</Badge>
+				</a>
+				</h1>
+			<h2 class="text-2xl text-wrap" >
+				<span> +2 años de esperiencia</span>
+				<span class=" text-yellow-200/90">Desarrollador web FullStack y Creador de Contenido web.</span> 
+				<span class=" text-red-200/90"> De Buenos	Aires Argentina</span>. <span class=" opacity-75">Especializado en crear aplicaciones únicas.</span>
+			</h2>
+			<nav class="flex gap-x-2">
+				<SocialPill href="https://www.linkedin.com/in/gerokramar/">
+					<LinkedLnIcon class="w-6 h-6"></LinkedLnIcon>LinkedLn
+				</SocialPill>
+				<SocialPill href="https://www.linkedin.com/in/gerokramar/">
+					<Github class="w-6 h-6"></Github>Github
+					</SocialPill>
+			</nav>
+		</section>
+		</main>
+	</Layout>
 
 
